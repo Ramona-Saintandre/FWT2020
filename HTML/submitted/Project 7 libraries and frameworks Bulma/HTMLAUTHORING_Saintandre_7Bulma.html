@@ -1,0 +1,218 @@
+<!-- Submit This: Bulma
+Bulma is another popular CSS library. In this exercise, you'll correctly configure Bulma located at www.Bulma.io. The best place to start is with the instructions on the "Getting Started with Bulma" page at https://bulma.io/documentation/overview/start/.
+
+Using Bulma's media object (https://bulma.io/documentation/layout/media-object/) create a document with images and descriptions similar to the example below. Your page should have three images and three descriptions. 
+
+References:
+Bulma CSS Framework - complete tutorial = https://www.youtube.com/watch?v=LBzZLzu2GKo
+Traversy Media Bulma CSS Framework Crash Course = https://www.youtube.com/watch?v=IiPQYQT2-wg
+Get to Know Bulma: My Current Favorite CSS Framework = https://scotch.io/bar-talk/get-to-know-bulma-my-current-favorite-css-framework/amp
+Learn Bulma CSS for free = https://scrimba.com/g/gbulma
+Bulma Images = https://bulma.io/documentation/elements/image/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <title>Section 7: CSS Libraries and Frameworks</title>
+    <!-- <link rel="stylesheet" href="./debug.css"> -->
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .message-body {
+            display: flex;
+            justify-content: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: rgb(195, 195, 211);
+            text-align: center;
+        }
+
+        .hero-title {
+            font-family: cursive;
+            text-align: center;
+            justify-content: center;
+            font-size: 5em;
+            color: rgb(28, 28, 124);
+
+        }
+
+        .hero-sub-title {
+            font-family: cursive;
+            text-align: center;
+            font-size: 3em;
+            color: rgb(9, 9, 112);
+        }
+
+        .hero {
+            background: linear-gradient(blue, green, purple, rgb(19, 19, 197));
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- hero: https://bulma.io/documentation/layout/hero/ -->
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="hero-title">My coding Journey</h1>
+
+                <figure class="image center  ">
+                    <img src="https://lh3.googleusercontent.com/P2MSW9KxZ4SdXXAApq3Pe8egNm5KUBT2hHFNS1_ig-I82U1w6XBvtwSGvus9JhM-aJCV6cgKWL699WP5pjCcz6On40xnvflwna7BKQ0znmSQha33xkWgAPqYWw4-lVkFrtzBiqFdCJ0QbGZFntmWuyizotI5kmm9948uO-iOs9qS3ZH-xm05RYjNz8IGcZPkdLwDt5-JcNlARW6OSaGS72xD-GKtlm0J_kryh6sNv-Xz7kauJIejAl8iwqV0aNj0yp7gdThRAY8P3t7SqscP4iLQd0jZYxdH-6jFbFJ_gREXrjUe-YLvHGWBOJDaH95iGQf171npqv6fcRT9yoRHZm6HOYGIq8AbY7EF8ufdGQIOujvP8TbdFI9ecqq8mBGU-ArGalo-ZPCgeKW6RmQvpEAeYQAxZ8tAgfbi8L3ii_MKbkFhoAVrzvifqNbl_sTvSy0vCjjpIk1EVe-gZ89xmSPnEuspSRZRy8GGh9aE7mFWzPFqll6ubX9TdJZ4yFArfnyfLcsja5YpL52t0R894vBYA3CeZShc1ysjOK1JcNe318ODuDWUZTdKbskeQwoXIMoyQ7QaUhqgOjhctW74nBRQxu8zKIGZspvul3iavcSNqyDX_bwXt8PwUddvCQxUDsu974NCHutUwKp63grkiECg5WmoEFcx=w863-h853-no"
+                        alt="Brooklynn coding collage" style="max-width:256px">
+
+                </figure>
+                <h2 class="hero-sub-title">With Brooklynn</h2>
+            </div>
+    </section>
+
+    <!-- section: https://bulma.io/documentation/layout/section/ -->
+    <section class="section ">
+        <div class="container">
+            <div class="columns ">
+                <div class="column is-one-third">
+                    <div class="notification">
+
+                        <figure class="image ">
+                            <img class='is-rounded has-background-danger'
+                                src="/images/representing.jpg"
+                                alt=" Ramona Saintandre representing PyLadies GR" />
+                        </figure>
+                    </div>
+                </div>
+                <div class="column has-background-info">
+                    <div class="notification ">
+                        <article class="message is-info is-large">
+                            <div class="message-header">
+                                <p class="title"><strong>The reason I started coding</strong>
+                                </p>
+                            </div>
+
+                            <div class="message-body has-background-success">I started coding a little over a year ago,
+                                after I lost my job.
+                                <br>
+                                I needed to learn a new skill to get a job, and I was blessed to get a scholarship
+                                through Udacity. <br>
+                                I am continuing my studies now on my own, to get more profiencent with coding. <br>
+                                I also get the privilege of taking my granddaughter Brooklynn along this journey with
+                                me.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section ">
+        <div class="container ">
+            <div class="columns ">
+                <div class="column is-one-third">
+                    <div class="notification">
+
+                        <figure class="image">
+                            <img class='is-rounded'
+                                src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/61484676_10219742419169926_2577863766473441280_n.jpg?_nc_cat=104&_nc_oc=AQlRBkEBYmqr05NFvmA-fjcpc1yP9ReQH7BNHoAsK_uPQuYtMY4Iqzx-iWI9qqlANdQ&_nc_ht=scontent-ort2-2.xx&oh=d86972176a58605b3aaf6a7392110fcc&oe=5DBCEAA2"
+                                alt=" Beer City Code with Beau Carnes" />
+                        </figure>
+                    </div>
+                </div>
+                <div class="column has-background-danger ">
+                    <div class="notification ">
+                        <article class="message is-warning is-large">
+                            <div class="message-header ">
+                                <p class="title">Sharing my love of Code with my granddaughter</p>
+                            </div>
+
+                            <div class="message-body">
+                                A big part of my coding journey is going to meetups and workshops. <br>
+                                Here in Grand Rapids, over the past year, there has been a big tech boom, especically in
+                                the field of
+                                development.<br>
+                                There is also a big push to get children involved, because of this I have been able to
+                                take my granddaughter to several
+                                of these events. <br>
+                                We recently enjoyed the day at Beer City Code, here in Grand Rapids. <br>
+                                Brooklynn got to play with robots, and hang out with Beau Carnes. <br>
+                                Our summer vacation this year is a whole week at THAT conference, with a stop at the
+                                Museum of Science <br>
+                                in Chicago on our way there.
+
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-one-third ">
+                    <div class="notification">
+
+                        <figure class="image">
+                            <img src="/images/studybuddies.jpg" alt="studybuddies"> <br>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="notification ">
+                        <article class="message is-success is-large">
+                            <div class="message-header">
+                                <p class="title">Enpowerment through Education and Encourgement</p>
+                            </div>
+
+                            <div class="message-body ">
+                                The biggest thing I have come to appreciate this past year is the awesome community that
+                                is out there. <br>
+                                Especially for women devolopers, and newbies.
+                                Between Free Code Camp, Women in Development, PyLadies, and other organizations. <br>
+                                There is no shortage of support, encouragement, and accountability. <br>
+                                I get to share all of this with Brooklynn, so as she grows in her coding skills, she
+                                will know that she is not alone.
+
+                                </there>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer class="footer">
+            <div class="content has-text-centered">
+        <p>
+            <a href="https://bulma.io">
+                <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="150" height="24">
+            </a>
+        </p>
+
+        </div>
+    </footer>
+    <div style="margin-top:1500px"></div>
+</body>
+
+</html> 

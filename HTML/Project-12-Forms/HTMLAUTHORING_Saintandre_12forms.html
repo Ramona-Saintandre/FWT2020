@@ -1,0 +1,85 @@
+<!-- Create an HTML5 document from scratch that is correctly 
+    formed and coded that includes at least 8 fields. 
+All of the input types you’ve studied should be incorporated.
+
+Research how to make a password field and add it in your form as well.
+https://www.w3schools.com/css/css_form.asp -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Forms</title>
+</head>
+<body>
+<header><h1 id="title">Learning Survey</h1></header>
+    
+
+    <div id="outer-form">
+        <p id="description">
+                Tell Us about You
+        </p>
+        <!-- Frist Name FORM -->
+        <!-- form action attribute https://www.w3schools.com/tags/att_form_action.asp / /www.w3schools.com/tags/tag_form.asp-->
+<form id="survey-form" method="GET" action="https://frameworktv.com/" >
+<div class="rowTab">  
+    <!-- labels - https://www.w3schools.com/tags/tag_label.asp       -->
+    <div class="labels">
+            <label id='first-name-label' for="name"> First Name:</label>
+    </div>
+    <div class="tabRight">
+        <input autofocus='' type="text" name='name' id='name'class='input-field'placeholder='enter your First Name'required''>
+    </div>
+</div>
+
+<!-- Last Name FORM -->
+<div class="rowTab">  
+        <!-- labels - https://www.w3schools.com/tags/tag_label.asp       -->
+        <div class="labels">
+                <label id='last-name-label' for="name"> First Name:</label>
+        </div>
+        <div class="tabRight">
+            <input autofocus='' type="text" name='name' id='name'class='input-field'placeholder='enter your Last Name'required''>
+        </div>
+
+   <!-- Email FORM -->
+   <div class="rowTab">        
+        <div class="labels">
+                <label id='email-label' for="email">Email:</label>
+        </div>
+        <div class="tabRight">
+            <input  type="email"  name='email' id='email'class='input-field' placeholder='enter your Email'required''>
+        </div>
+
+   <!-- Alternate Email FORM -->
+   <div class="rowTab">        
+        <div class="labels">
+                <label id='alt-email-label' for="email"> Alternate Email:</label>
+        </div>
+        <div class="tabRight">
+            <input  type="email"  name='email' id='email'class='input-field' placeholder='enter your Alternate Email'required''>
+        </div>
+
+   <!-- birthdate FORM -->
+   <div class="rowTab">        
+        <div class="labels">
+                <label id='birthday' for="birthday">Birthday:</label>
+        </div>
+        <div class="tabRight">
+            <input  type="date"  name='bday' id='bday'class='input-field' placeholder='enter your Alternate Email'required''>
+        </div>
+   <!-- Phone FORM -->
+
+   <!-- Occupation FORM -->
+
+   <!-- password FORM = https://www.w3schools.com/tags/att_input_type_password.asp -->
+    
+</form>
+
+    </div>
+    
+    
+</body>
+</html>

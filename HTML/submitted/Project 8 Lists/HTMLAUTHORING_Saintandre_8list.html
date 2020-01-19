@@ -1,0 +1,82 @@
+<!-- Create an HTML5 document from scratch that is correctly formed and coded that names five places you wish to visit and five of your favorite sites around the world. The output should include two headings, one saying “Places I Want to Visit” and the other saying “5 Best Sites in the World”. Create one of your lists as an ordered list and the other as an unordered list. Use CSS styling to change the default look for each list to make it pleasing and readable for the user. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300|Teko&display=swap" rel="stylesheet">
+    <title>Section 8: Lists in HTML5</title>
+</head>
+<style>
+   
+    .visit {
+        list-style: circle;     
+            }
+
+    .sites {
+        list-style: upper-roman;
+               
+    }
+
+    .ol {
+        background-color: rgb(191, 200, 241);
+    }
+
+    .ul {
+        background-color: rgb(221, 230, 243);
+    }
+
+    .footer {
+        background-color: rgb(163, 182, 241);
+            }
+
+    .header {
+        font-family: 'Teko', sans-serif;
+        color: rgb(67, 67, 194);
+        padding: 25 50 15 50;
+    }
+
+    li {
+        font-family: 'Merriweather Sans', sans-serif;
+        padding: 25 50 15 50;
+    }
+</style>
+
+<body>
+    <!-- unordered list -->
+    <div class='ul container'>
+        <h1 class='header'>Places I want to visit</h1>
+        <ul class='visit'>
+            <li>Picture Rock</a></li>
+            <li>Rockie Mountains</li>
+            <li>Hawaii</li>
+            <li>Statue of Liberty</li>
+            <li>MIT University</li>
+        </ul>
+    </div>
+
+
+
+    <!-- ordered list  -->
+    <div class="ol container">
+        <h1 class='header'>5 Best sites in the World</h1>
+        <ol type='A' class='sites'>
+            <li>YellowStone Park</li>
+            <li>Rocky Mountains</li>
+            <li>San Franciso, California</li>
+            <li>Prague</li>
+            <li>Great Barrier Reef</li>
+        </ol>
+    </div>
+
+</body>
+<footer class='footer'>
+    <a href='https://travel.usnews.com/gallery/the-worlds-30-best-places-to-visit-in-2018-19?onepage'>Places to Visit in
+        2018-19</a>
+
+    <p> <a href='https://guide.freecodecamp.org/css/styling-lists/'>Free Code Camp styling-list</a></p>
+</footer>
+
+</html>

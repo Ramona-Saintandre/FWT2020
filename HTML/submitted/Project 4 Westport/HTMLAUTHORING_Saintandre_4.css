@@ -1,0 +1,19 @@
+h1 {
+    font-family: Pattaya;
+    font-size: 2.75em;
+    font-weight: 900;
+    text-decoration: none;
+    font-variant: small-caps;
+    color: rgb(88, 38, 105);
+    text-align: left;
+}
+
+p {
+    font-family:Noto Sans;
+    line-height: 3em;
+    text-align: left;
+}
+
+/* font-family: 'Pattaya', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Lora', serif; */

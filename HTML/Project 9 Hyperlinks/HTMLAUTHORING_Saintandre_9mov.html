@@ -1,0 +1,140 @@
+<!-- https://www.freecodecamp.org/news/how-to-center-things-with-style-in-css-dc87b7542689/?fbclid=IwAR2MIGyEF2PNrW8dKxADxtmef2bs7vl0xjwWXmJfWrJnbcvdFpkj-f2QzTU
+
+    https://scrimba.com/c/cLrNDkfE - background imagaes
+
+    Submit This: Movie Links
+Create two HTML5 documents from scratch that are correctly formed and coded that name a movie title each.
+
+The movie title should be an h1 that links to the movie on imdb. 
+If you are unfamiliar with imdb, you can visit imdb.com and search for the movies you want in the search bar.
+
+Write an unordered list in each document that links to three actors’ or actresses’ Wikipedia pages.
+
+Below the names of the actors/actresses, you should write the name of the other movie you’ve chosen and link to its document file. 
+Create your links in such a way that both documents link to each other.
+The font-style of the links should be italic, and their color should be brown in both states of being visited or unvisited. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Section 9: Hyperlinks</title>
+    <!-- <link rel="stylesheet" href='styles.css'> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
+      <style>
+    .mainheader{       
+text-align: center;
+background:  #5a6ca8;
+color: white;  
+}
+    h1,h3{
+font-style: italic;
+color:rgb(119, 42, 42);    
+}
+h2{
+color:black;
+text-emphasis: bold;
+text-align: center;
+}
+li{
+list-style-type: none;
+text-align: center;
+
+}
+.actor-img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+a:link{
+text-decoration: none;
+}
+.headerimg{
+max-width: 350px;
+height: auto; 
+position: relative;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+.fptitle,.subtitle,.fpHeader{
+text-align: center;
+font-size: 55px;
+}
+footer{
+   
+text-align: center;
+background: #5a6ca8;
+
+}
+
+</style>
+</head>
+
+<body>
+<div id="header-container">
+<header class ='mainheader'>
+    
+        <a class ="fptitle" href="https://www.imdb.com/title/tt1129423/?ref_=ttfc_fc_tt" target="_blank"><h1>FireProof</h1></a>  
+    </header>
+            <img class ='headerimg' src="https://m.media-amazon.com/images/M/MV5BMGZhYzFjY2ItNDVmZi00Y2Q1LWFmMDgtMzAwYTU3NTI3ZGU4XkEyXkFqcGdeQXVyMTMxMTY0OTQ@._V1_SY1000_CR0,0,673,1000_AL_.jpg" alt="fireproof poster">
+            <h3 class="subtitle">Never leave your partner behind</h3>
+
+</div> <!-- header container  -->
+
+    <div class='fpHeader'>FireProof Cast</div><br> <!-- needs to centered and bigger -->
+    
+
+<div class="fpCast">    
+    <!-- Kirk Cameron -->
+    <ul>
+            <li class='actor'><a href="https://www.imdb.com/name/nm0131647/?ref_=tt_cl_t14" target="_blank"><h3>Movies featuring</h3><h1>Kirk Cameron</h1></a></li>           
+            <img class ='actor-img' src="http://cdn.smehost.net/providentfilmsorg-anthologyprod/uploads/images/films/full/295af8417294314534f1f652973b02bc.jpg" alt="Kirk Cameron">
+         
+            <ol>
+                <a href="https://www.imdb.com/title/tt0090713/?ref_=nm_flmg_act_30" target="_blank"><li><h1>The Best of Times  (1986)</h1></li></a>
+                <a href="https://www.imdb.com/title/tt0190524/?ref_=nm_flmg_act_16" target="_blank"><li><h1>Left Behind: The Movie (2001)</h1></li></a>
+                <a href="https://www.imdb.com/title/tt3070502/?ref_=nm_flmg_act_6" target="_blank"><li><h1>Unstoppable (2013)</h1></li></a>
+           
+            
+            
+        </ol>
+        </ul><br>
+       
+        <!-- Erin Bethea -->
+        <ul>
+                <li class='actor'><a href="https://www.imdb.com/name/nm2814621/?ref_=tt_ov_st_sm#actress" target="_blank"><h3>Movies featuring</h3><h1>Erin Bethea</h1></a></li> 
+                <img class ='actor-img' src="https://so-s.nflximg.net/soa2/502/592279502.jpg" alt="Erin Bethea">    <br>           
+                <ol>
+                    <a href="https://www.imdb.com/title/tt0805526/?ref_=nm_flmg_act_28" target="_blank"><li><h1>Facing the Giants      (2006)</h1> </li></a>
+                    <a href="https://https://www.imdb.com/title/tt1462054/?ref_=nm_flmg_act_26" target="_blank"><li><h1>Letters to God (2010)</h1></li></a>
+                    <a href="https://www.imdb.com/title/tt8801584/?ref_=nm_flmg_act_4" target="_blank"><li><h1>Sunrise in Heaven       (2019)</h1></li></a>
+                
+                
+                
+            </ol>
+            </ul>
+
+            <!-- Ken Bevel -->
+            <ul>
+                    <li class='actor'><a href="https://www.imdb.com/name/nm2848533/?ref_=ttfc_fc_cl_t3" target="_blank"><h3>Movies featuring</h3><h1>Ken Bevel</h1></a></li>  
+                    <img class ='actor-img' src="https://m.media-amazon.com/images/M/MV5BMTM1NDA1MDkyM15BMl5BanBnXkFtZTcwOTgyMjY5MQ@@._V1_.jpg" alt="Ken Bevel"><br>         
+                    <ol>
+                        <a href="https://www.imdb.com/title/tt1630036/?ref_=nm_knf_t1" target="_blank"><li><h1>Courageous (2006)</h1> </li></a>
+                        <a href="https://www.imdb.com/title/tt1129423/?ref_=ttfc_fc_tt" target="_blank"><li><h1>Fireproof (2008)</h1></li></a>                      
+                    
+                                       
+                </ol>
+                </ul>
+</div> <!-- cast container -->
+
+<footer><h3>Produced by</h3><a href="http://www.kendrickbrotherscatalogue.com/warroom/" target="_blank"><h1>Alex and Stephen Kendrick</h1></a><br>
+<a href ='HTMLAUTHORING_Saintandre_9mov1.html' target="_blank"><h3>More movies from the</h3><h1> Kendrick Brothers</h1></a>
+</footer>
+</body>
+
+</html>
