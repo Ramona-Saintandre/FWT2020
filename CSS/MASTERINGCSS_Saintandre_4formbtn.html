@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Framework Mad Lib Exercise</title>
+    </head>
+    <body>
+        <div id="output">
+        <script>
+            
+            var properName = prompt("Enter a proper name");
+            var verb = prompt("Enter a verb (present tense)");//verb is used to describe an action, state, or occurance
+            var verb2 = prompt("Enter a second verb (past tense)");
+            var verb3 = prompt("Enter a second verb (future tense)");
+            var adj = prompt("Enter an adjective");//adj is a word that modifies or describes a noun
+            var adj2 = prompt("Enter another adjective");
+            var adj3 = prompt("Enter yet another adjective");
+            
+            var out = "Roses are Red.  Violets are blue. <br/>";
+            out += properName + " left town without wearing a shoe. <br/>";
+            out += properName + " " + verb + adj3 ;
+            out += "And " + properName + " " + verb2 ;
+            out += properName + " " + verb3 + ".<br/>";
+            out += "<br/> But I am " + adj + " " +  properName + " thought.<br/>";
+            out += " And kind of " + adj2 + " too!";
+            out += "<br/> Because " + adj3 + " " +  properName + " totally lost their mind.<br/>";
+
+            document.getElementById('output').innerHTML = out;            
+            
+        </script>
+      
+        </div>
+    </body>
+</html>
