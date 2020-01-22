@@ -6,9 +6,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  
     <title>goal app </title>
 </head>
 <body>
-    
+    <div data-role class="page" id="enterGoals">
+        <div class="data-role"="header">
+            <h1>Daily Goal Tracker</h1>
+        </div>         <!-- header -->
+<div role="main" class="ui-content">
+    <div id="gaolslist">
+
+    </div>
+    <form action="">
+        <label for="goal">Enter Your Goal</label>
+        <textarea  id="goal" data-mini="true" cols="40" rows="6"></textarea>
+    </form>
+</div>
+    </div>
+
+    <script src="/LAD-goalapp/app.js"></script>
 </body>
 </html>
