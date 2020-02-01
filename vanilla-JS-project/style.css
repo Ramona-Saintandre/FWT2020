@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Gelasio:regular,italic,500,500italic,600,600italic,700,700italic);
+body{
+    font-family: "gelasio",serif;
+    margin: 10px;
+}
+#form{
+    border:1px solid black;
+    padding: 10px;
+    background-color: cadetblue;
+}
+#form button {
+    width: 100%;
+    font-size: 1.25em;
+    height: 30px;
+    background-color: coral;
+    font-family: 'Gelasio',serif;
+}
+#form input{
+    font-size: 1.25em;
+    width: 100%;
+    background-color: cornsilk;
+    margin-bottom: 10px;
+}
