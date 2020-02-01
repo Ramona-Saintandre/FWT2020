@@ -4,7 +4,7 @@ body{
     margin: 10px;
 }
 #form{
-    border:1px solid black;
+    border:5px solid black;
     padding: 10px;
     background-color: cadetblue;
 }
@@ -20,4 +20,7 @@ body{
     width: 100%;
     background-color: cornsilk;
     margin-bottom: 10px;
+}
+#result{
+    margin-top: 10px;
 }
