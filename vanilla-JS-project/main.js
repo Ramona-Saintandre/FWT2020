@@ -4,7 +4,7 @@ let textAddress = document.getElementById('address');
 
 btnGetData.onclick = function(){
     let address = textAddress.value;
-    let url = "https://www.googleapis.com/civicinfo/v2/representatives?key=" + googleKey + "&address=" + address
+    let url = "https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyBfmdPmbPuJshAoS_1u7lBIkRVg1CXMSQY"  + address
     console.log(url);
     
 fetch(url)
