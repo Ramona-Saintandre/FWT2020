@@ -1,0 +1,34 @@
+h1  {
+  font-size: 3.5em;
+}
+select  {
+  width: 100%;
+  font-size:2em;
+}
+
+#container  {
+  font-family: helvetica, arial, sans-serif;
+}
+
+.dest  {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.time  {
+  float: right;
+  font-size: 2em;
+}
+
+.train  {
+  border: 1px solid gray;
+  padding: 10px;
+  margin-bottom: 2px;
+}
+
+.desc  {
+  font-size:  1.25em;
+}
+.line  {
+  font-size: 1.15em;
+}
