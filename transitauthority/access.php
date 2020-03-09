@@ -6,7 +6,7 @@ $station = $_REQUEST['station'];
 
 // The URL that we want to get
 
-$url = 'http://lapi.transitchicago.com/api/1.0/ttarivals.aspx?key='
+$url = 'http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=a9e522dafebf4cb3a70e102ce8a8abcf&mapid=40380'
 $url .= $station;
 $url .= "&outputType=JSON";
 

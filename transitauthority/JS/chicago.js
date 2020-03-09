@@ -61,5 +61,6 @@ for (var x=0; x <trainArray.length; x++){
   const rt = trainArray[x].rt;
   const description = trainArray[x].stpDe;
   const approaching = trainArray[x].isApp;
+  formatData(destination, arrivalTime, rt, description, approaching);
 }
   }
