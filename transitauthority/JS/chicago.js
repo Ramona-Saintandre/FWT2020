@@ -18,9 +18,9 @@ getStations = function () {
   document.getElementById('stationSelect').addEventListener('change', function () {
     station = document.getElementById('stationSelect').value;
     url += "access.php/?station=" + station;
-    getTrains(stations);
+    getTrains(station);
     url = "";
-  })
+  });
 }
 
 //  Getting train information 
@@ -28,12 +28,18 @@ getStations = function () {
 getTrains = function(station){
   fetch(url)
   .then ((resp) => resp.json())
-  .then (function(data){
-    console.log(data);
+  .then (function(data) {
+    // console.log(data);
     getTrainInfo(data);
-  }).then(function)(){
+  }).then(function() {
     console.log(out);
-    document.getElementById('trainInfo').innerHTML = out;
+    document.getElementById('trainInfo').innerHTML = "";
+    out="";
+    const trainArray = data.ctatt.eta;
+    console.log(trainArray);
+  })
+}
+  getTrainInfo = function(data) {
+
   }
-  getTrainInfo = function(data)
 }
