@@ -24,20 +24,23 @@ getStations = function () {
 }
 
 //  Getting train information 
+// creating the promise to work sync
 
-getTrains = function(station){
+ getTrains = function(station){  //get the information from the url 
   fetch(url)
-  .then ((resp) => resp.json())
-  .then (function(data) {
+   .then ((resp) => resp.json())  //make it into a JSON file 
+  .then (function(data) {   //pass the data to get train infomation 
     // console.log(data);
-    getTrainInfo(data);
+
+    getTrainInfo(data);  //parse the information 
   }).then(function() {
     console.log(out);
-    document.getElementById('trainInfo').innerHTML = "";
-    out="";
-    const trainArray = data.ctatt.eta;
+    document.getElementById('trainInfo').innerHTML = out;  //display the data  
+    
+    // const trainArray = data.ctatt.eta;
+    
     console.log(trainArray);
-  })
+  }).catch(error => console.log(error));  //catch's errors that come along the way 
 }
 
 // Train information to be displayed 
