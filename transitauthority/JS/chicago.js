@@ -39,7 +39,10 @@ getTrains = function(station){
     console.log(trainArray);
   })
 }
-  getTrainInfo = function(data) {
 
+// Train information to be displayed 
+
+  getTrainInfo = function(data) {
+document.getElementById('trainInfo').innerHTML = "";
+out = "";
   }
-}
