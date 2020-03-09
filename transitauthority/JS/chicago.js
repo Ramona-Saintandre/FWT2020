@@ -22,3 +22,18 @@ getStations = function () {
     url = "";
   })
 }
+
+//  Getting train information 
+
+getTrains = function(station){
+  fetch(url)
+  .then ((resp) => resp.json())
+  .then (function(data){
+    console.log(data);
+    getTrainInfo(data);
+  }).then(function)(){
+    console.log(out);
+    document.getElementById('trainInfo').innerHTML = out;
+  }
+  getTrainInfo = function(data)
+}
