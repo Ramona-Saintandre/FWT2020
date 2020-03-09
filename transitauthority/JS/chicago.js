@@ -1,8 +1,12 @@
-let url = '';
-let out = '';
-let station = '';
+let url = '';  //holds the url created to query the API
+let out = '';  // output function 
+let station = '';  // station that is currently selected function
 
-window.onload = function(){
+window.onload = function(){  // onload event waits for everthing to load before excuting the getStations functions 
+getStations();
+}
+
+getStations = function() {
   let out = "<select  id=<'stationSelect'>";
   for (var x = 0; x < stations.length; x++){
     out += "<option value = ' " + stations[x].number + "'>";
@@ -11,7 +15,7 @@ window.onload = function(){
   }
   out += "</select>";
   document.getElementById('stationSched').innerHTML = out;
-this.document.getElementById('stationSelect').addEventListener('change', function (){
-  
+document.getElementById('stationSelect').addEventListener('change', function (){
+
 })
 }
