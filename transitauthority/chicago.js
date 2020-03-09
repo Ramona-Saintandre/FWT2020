@@ -10,4 +10,6 @@ window.onload = function(){
     out += "</option>";
   }
   out += "</select>";
+  document.getElementById('stationSched')innerHTML = out;
+this.document.getElementById('stationSelect').addEventListener('change', function ())
 }
