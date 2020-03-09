@@ -1,5 +1,7 @@
 <?phpheader('Access-Control-Allow-Origin: http://lapi.transitchicago.com');
 
+// getting the station number that is passed from the JS 
+
 $station = $_REQUEST['station'];
 
 // The URL that we want to get
